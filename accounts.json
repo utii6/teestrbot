@@ -1,0 +1,11 @@
+{
+  "owner_id": 5581457665,
+  "instagram_accounts": [
+    {"username": "test_insta1", "password": "pass123"},
+    {"username": "test_insta2", "password": "pass123"}
+  ],
+  "telegram_accounts": [
+    {"phone": "+9647700000001", "api_id": 123456, "api_hash": "api_hash_1"},
+    {"phone": "+9647700000002", "api_id": 654321, "api_hash": "api_hash_2"}
+  ]
+}
