@@ -32,7 +32,7 @@ def log_action(action):
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
     if user_id != OWNER_ID:
-        await update.message.reply_text("مرحبا حبيبي تحتاج شي تعال @E2E12 ، البوت متوقف حاليا ✅")
+        await update.message.reply_text("هلا حبيبي تحتاج شي تعال @E2E12 ،البوت فقط للمالك (لسريته) ✅")
         return
 
     keyboard = [
@@ -147,7 +147,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         del context.user_data['adding']
 
 # ---------- تشغيل البوت ----------
-TOKEN = "6217434623:AAGZqBjmVz-VZ6W0y0yMXeN0pAtXyRjSZTNk"
+TOKEN = "6217434623:AAGZqBjmVz-VZ6W0y0MXeN0pAtXyRjSZTNk"
 
 app = ApplicationBuilder().token(TOKEN).build()
 app.add_handler(CommandHandler("start", start))
